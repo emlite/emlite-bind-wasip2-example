@@ -1,0 +1,25 @@
+{
+  "name": "emlite-bind-wasip2-example",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "cargo": "cargo build --target=wasm32-wasip2 --release",
+    "jco:app": "npx jco transpile ./target/wasm32-wasip2/release/emlite_bind_example.wasm -o bin/app --instantiation --no-nodejs-compat --tla-compat",
+    "pack": "webpack --mode=production",
+    "serve": "http-server ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "emlite": "^0.1.34"
+  },
+  "devDependencies": {
+    "@bytecodealliance/jco": "^1.13.3",
+    "http-server": "^14.1.1",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  }
+}

@@ -1,0 +1,6 @@
+/target
+node_modules
+/dist/*.wasm
+/dist/*.ts
+/dist/*.js
+bin
