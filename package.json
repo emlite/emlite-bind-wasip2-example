@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "cargo": "cargo build --target=wasm32-wasip2 --release",
-    "jco:app": "npx jco transpile ./target/wasm32-wasip2/release/emlite_bind_example.wasm -o bin/app --instantiation --no-nodejs-compat --tla-compat",
+    "jco:app": "npx jco transpile ./target/wasm32-wasip2/release/emlite_bind_example.wasm -o bin/app --instantiation async --no-nodejs-compat --tla-compat",
     "pack": "webpack --mode=production",
     "serve": "http-server ./dist"
   },
@@ -14,10 +14,10 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "emlite": "^0.1.35"
+    "emlite": "^0.1.36"
   },
   "devDependencies": {
-    "@bytecodealliance/jco": "^1.13.3",
+    "@bytecodealliance/jco": "^1.14.0",
     "http-server": "^14.1.1",
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1"
