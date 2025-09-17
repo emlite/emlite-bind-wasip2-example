@@ -7,6 +7,6 @@ edition = "2024"
 crate-type = ["cdylib"]
 
 [dependencies]
-jsbind = "0.1.35"
-webbind = "0.1.36"
+jsbind = "0.1.38"
+webbind = "0.1.38"
 wit-bindgen = "0.44"

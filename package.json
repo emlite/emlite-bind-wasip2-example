@@ -14,7 +14,7 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "emlite": "^0.1.36"
+    "emlite": "^0.1.37"
   },
   "devDependencies": {
     "@bytecodealliance/jco": "^1.14.0",
