@@ -5,9 +5,9 @@ import { WASIShim } from "@bytecodealliance/preview2-shim/instantiation";
 
 async function instantiateApp() {
   const getAppCore = (p) =>
-  WebAssembly.compileStreaming(
-    fetch(new URL(`../bin/app/${p}`, import.meta.url))
-  );
+    WebAssembly.compileStreaming(
+      fetch(new URL(`../bin/app/${p}`, import.meta.url))
+    );
 
   const wasiShim = new WASIShim({
     // optional:
@@ -23,26 +23,20 @@ async function instantiateApp() {
   let applyImpl = () => {
     throw new Error("dyncall.apply not wired yet");
   };
+  let targetImpl = () => -1;
 
   // 2) Build the host, injecting a delegating apply
-  const host = makeHost({ emlite, apply: (...args) => applyImpl(...args) });
+  const host = makeHost({ emlite, apply: (...args) => applyImpl(...args), target: () => targetImpl() });
 
   // 3) Instantiate the app (no dyncall import needed)
   const app = await initApp(getAppCore, {
     ...wasi,
     "emlite:env/host": host,
-    "emlite:env/host@0.1.0": host,
   });
 
-  // 4) Wire the host’s apply to the app’s exported trampoline
-  const exported =
-    app["emlite:env/dyncall@0.1.0"]?.apply ||
-    app["emlite:env/dyncall"]?.apply;
+  applyImpl = app["emlite:env/dyncall@0.1.0"]?.apply;
 
-  if (!exported) {
-    throw new Error("Guest didn’t export emlite:env/dyncall.apply");
-  }
-  applyImpl = exported;
+  targetImpl = app["emlite:env/dyncall@0.1.0"]?.emliteTarget;
 
   return app;
 }

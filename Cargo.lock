@@ -31,9 +31,9 @@ dependencies = [
 
 [[package]]
 name = "emlite"
-version = "0.1.49"
+version = "0.1.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "59df32e4073317e46919a2c37e367f3ed6fc928f709233972b8038b50bd5d9b4"
+checksum = "942b79019b612087e9c3ff6df3858d190a64e0bbe205aae5ba21fe37f25a0b58"
 dependencies = [
  "cmk",
  "wit-bindgen",
@@ -159,6 +159,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "hashbrown"
+version = "0.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5419bdc4f6a9207fbeba6d11b604d481addf78ecd10c11ad51e76c2f6482748d"
+
+[[package]]
 name = "heck"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -172,12 +178,12 @@ checksum = "25a2bc672d1148e28034f176e01fffebb08b35768468cc954630da77a1449005"
 
 [[package]]
 name = "indexmap"
-version = "2.11.3"
+version = "2.11.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "92119844f513ffa41556430369ab02c295a3578af21cf945caa3e9e0c2481ac3"
+checksum = "4b0f83760fb341a774ed326568e19f5a863af4a952def8c39f9ab92fd95b88e5"
 dependencies = [
  "equivalent",
- "hashbrown",
+ "hashbrown 0.16.0",
  "serde",
  "serde_core",
 ]
@@ -190,9 +196,9 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
 name = "jsbind"
-version = "0.1.38"
+version = "0.1.39"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97d422772cb1d82c3036a869de67c8d51347ffacbe5267c380a68515f3f2810a"
+checksum = "6ff6e3f036e146269735f2c86f8490ef62880ec84c8a382a2c6509b0973e7bbb"
 dependencies = [
  "emlite",
 ]
@@ -379,16 +385,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a9b1e81f3eb254cf7404a82cee6926a4a3ccc5aad80cc3d43608a070c67aa1d7"
 dependencies = [
  "bitflags",
- "hashbrown",
+ "hashbrown 0.15.5",
  "indexmap",
  "semver",
 ]
 
 [[package]]
 name = "webbind"
-version = "0.1.38"
+version = "0.1.39"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd028aba5b3b74267e0c156f4bda62566df74dbbcb84fab19385ba0485904d72"
+checksum = "92212cd1f51fd29fc29fcedb35716915ab8b185a9b092dffe40f22f5fcdae119"
 dependencies = [
  "convert_case",
  "jsbind",

@@ -19,6 +19,7 @@ struct Env;
 
 impl Guest for Env {
     fn start(_args: Vec<String>) -> u32 {
+        emlite::init();
         let con = Console::get();
         let document = window().document();
         let bodies = document.get_elements_by_tag_name(&"body".into());
