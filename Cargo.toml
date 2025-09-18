@@ -10,3 +10,4 @@ crate-type = ["cdylib"]
 jsbind = "0.1.39"
 webbind = "0.1.39"
 wit-bindgen = "0.44"
+wasip2 = "1"
