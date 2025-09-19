@@ -4,9 +4,9 @@ version = 4
 
 [[package]]
 name = "anyhow"
-version = "1.0.99"
+version = "1.0.100"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b0674a1ddeecb70197781e945de4b3b8ffb61fa939a5597bcf48503737663100"
+checksum = "a23eb6b1614318a8071c9b2521f36b424b2c83db5eb3a0fead4a6c0809af6e61"
 
 [[package]]
 name = "bitflags"
@@ -31,9 +31,9 @@ dependencies = [
 
 [[package]]
 name = "emlite"
-version = "0.1.50"
+version = "0.1.51"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "942b79019b612087e9c3ff6df3858d190a64e0bbe205aae5ba21fe37f25a0b58"
+checksum = "17bbf5fd2bd804054162dea060ca4b23e30bfb7105dfc0550856346f005eb166"
 dependencies = [
  "cmk",
  "wit-bindgen 0.44.0",
@@ -197,9 +197,9 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
 name = "jsbind"
-version = "0.1.39"
+version = "0.1.40"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ff6e3f036e146269735f2c86f8490ef62880ec84c8a382a2c6509b0973e7bbb"
+checksum = "3bc798eb8a8fb1ab99923f0bfdc94b608834f30f36b763b56b0e4b4192f617ab"
 dependencies = [
  "emlite",
 ]
@@ -402,9 +402,9 @@ dependencies = [
 
 [[package]]
 name = "webbind"
-version = "0.1.39"
+version = "0.1.40"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "92212cd1f51fd29fc29fcedb35716915ab8b185a9b092dffe40f22f5fcdae119"
+checksum = "23c328472889ee743fb142c2f4a80288f4cdc6925e71225f20cf7119a5a3d099"
 dependencies = [
  "convert_case",
  "jsbind",
