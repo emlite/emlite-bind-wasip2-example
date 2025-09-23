@@ -31,9 +31,9 @@ dependencies = [
 
 [[package]]
 name = "emlite"
-version = "0.1.51"
+version = "0.1.53"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "17bbf5fd2bd804054162dea060ca4b23e30bfb7105dfc0550856346f005eb166"
+checksum = "aeb151ad10a110d601c844126cf8419d95fd9ef9f6f4ba72747e14b82253380f"
 dependencies = [
  "cmk",
  "wit-bindgen 0.44.0",
@@ -197,9 +197,9 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
 name = "jsbind"
-version = "0.1.40"
+version = "0.1.42"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3bc798eb8a8fb1ab99923f0bfdc94b608834f30f36b763b56b0e4b4192f617ab"
+checksum = "614ef434f1a4770d86919d430af45c9f4ff4d66cf647697d0482629245eafe62"
 dependencies = [
  "emlite",
 ]
@@ -282,27 +282,27 @@ checksum = "d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2"
 
 [[package]]
 name = "serde"
-version = "1.0.225"
+version = "1.0.226"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd6c24dee235d0da097043389623fb913daddf92c76e9f5a1db88607a0bcbd1d"
+checksum = "0dca6411025b24b60bfa7ec1fe1f8e710ac09782dca409ee8237ba74b51295fd"
 dependencies = [
  "serde_core",
 ]
 
 [[package]]
 name = "serde_core"
-version = "1.0.225"
+version = "1.0.226"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "659356f9a0cb1e529b24c01e43ad2bdf520ec4ceaf83047b83ddcc2251f96383"
+checksum = "ba2ba63999edb9dac981fb34b3e5c0d111a69b0924e253ed29d83f7c99e966a4"
 dependencies = [
  "serde_derive",
 ]
 
 [[package]]
 name = "serde_derive"
-version = "1.0.225"
+version = "1.0.226"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ea936adf78b1f766949a4977b91d2f5595825bd6ec079aa9543ad2685fc4516"
+checksum = "8db53ae22f34573731bafa1db20f04027b2d25e02d8205921b569171699cdb33"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -402,9 +402,9 @@ dependencies = [
 
 [[package]]
 name = "webbind"
-version = "0.1.40"
+version = "0.1.42"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "23c328472889ee743fb142c2f4a80288f4cdc6925e71225f20cf7119a5a3d099"
+checksum = "8c0e5b2f15947ec1f4afbbcc21cb7a3b665268ac27669d98ca5714e022c661b6"
 dependencies = [
  "convert_case",
  "jsbind",
